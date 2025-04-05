@@ -1,0 +1,225 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+body{
+ background-color: rgb(11, 26, 51)
+
+
+}
+
+.left-home{
+
+  box-shadow: 15px 15px 15px 5px rgb(59, 59, 49);
+  animation-name:lefthomeimg;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-duration: 5000ms;
+  animation-timing-function: ease;
+
+}
+
+.right-home{
+    border: 4px solid yellow;
+    box-shadow: 0 0 55px 5px rgb(141, 141, 99);
+    animation-name:righthomeimg;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-duration: 4000ms;
+
+
+}
+@keyframes righthomeimg{
+    0%{
+        border-color: rgba(93, 93, 225, 0.87);
+        transform:translate(0,0px);
+        box-shadow: 10px 10px 100px 50px rgba(97, 97, 228, 0.87)
+      
+    }
+    25%{
+        border-color: rgb(40, 40, 187);
+        
+        box-shadow: 10px 10px 100px 50px rgb(40, 40, 187)
+    }
+    50%{
+        border-color: rgb(9, 9, 167);
+        transform:translate(0,10px);
+        box-shadow: 10px 10px 100px 50px rgb(22, 22, 113)
+    }
+    75%{
+        border-color: rgb(37, 37, 216);
+        
+        box-shadow: 10px 10px 100px 50px rgb(72, 72, 135)
+    }
+    100%{
+        border-color: rgba(97, 97, 228, 0.87);
+        transform:translate(0,-0px);
+        box-shadow: 10px 10px 100px 50px rgb(40, 40, 187)
+    }
+}
+
+@keyframes lefthomeimg{
+    0%{
+       
+        transform:translate(0,0px);
+       
+      
+    }
+    25%{
+        transform:translate(0,15px);
+    }
+    50%{
+      
+        transform:translate(0,0px);
+        
+    }
+    75%{
+        transform:translate(0,15px);
+    }
+    100%{
+       
+        transform:translate(0,-0px);
+        
+    }
+}
+.exp{
+ 
+    box-shadow: 15px 15px 15px 5px rgb(59, 59, 49);
+}
+.project{
+    box-shadow: 15px 15px 15px 5px rgb(59, 59, 49);
+}
+/*skills*/
+.item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 15px 15px 15px 5px rgb(59, 59, 49);
+} 
+@media (max-width:600px){
+    .exp{
+        font-size: small;
+    }
+    .exp-role{
+        font-size:small;
+    }
+    .image{
+        opacity: 0;
+    }
+    
+   
+}
+@media (max-width:400px){
+    .exp-heading{
+    opacity: 0;
+    }
+    .con-heading{
+        opacity:0;
+    }
+    .ski-heading{
+        opacity: 0;
+    }
+    .project1{
+        opacity: 0;
+    }
+}
+@media( min-width:565px) and (max-width:900px){
+    .element{
+        font-size: small;
+    }
+}
+@media (max-width:565px){
+   .item-nav{
+    padding: 4px;
+    font-size: x-small;
+   }
+}
+/* home*/
+@media(max-width:850px){
+    .right-home-image{
+        height: 200px;
+        width:200px;
+    }
+    .right-home{
+        height: 200px;
+        width:200px;
+    }
+    .left-home{
+        margin-top: 20px;
+        flex-wrap: wrap;
+        font-size: small;
+       
+    }
+    .l-h{
+        font-size: medium;
+        line-height: 20px;
+        padding-top: 30px;
+    }
+
+}
+@media(max-width:612px){
+    .l-h{
+        font-size: small;
+    }
+    .right-home-image{
+        height: 170px;
+        width:170px;
+    }
+    .right-home{
+        height: 170px;
+        width:170px;
+        margin-top: 20px;
+    }
+    .left-home{
+        margin-top: 0px;
+        flex-wrap: wrap;
+        font-size: smaller;
+       
+      
+       
+    }
+}
+@media(max-width:390px){
+    .right-home{
+        display:none
+    }
+    .home-center{
+        display: flex;
+        justify-content: center;
+       
+    }
+    .left-home{
+        margin-left: 0px;
+        
+    }
+
+}
+.elem-div{
+    box-shadow:0 5px 5px -5px rgb(215, 184, 144)
+}
+
+@media(max-width:1120px){
+    .left-home{
+        height: 200px;
+    }
+}
+@media(min-width:388px) and (max-width:412px){
+    .l-h{
+        padding-top: 0%;
+    }
+}
+/*project*/
+@media(max-width:350px){
+    .pro-div{
+        height:390px;
+       
+    }
+}
+
+
+
+
+
